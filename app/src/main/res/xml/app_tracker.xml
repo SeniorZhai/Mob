@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <int name="ga_dispatchPeriod"
+        30 />
+    <bool name="ga_reportUncaughtExceptions"
+        false />
+    <string name="ga_trackingId"
+        UA-57521889-1 />
+</resources>

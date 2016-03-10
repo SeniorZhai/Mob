@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/time_picker_dialog" android:background="@color/mdtp_background_color" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.wdullaer.materialdatetimepicker.time.RadialPickerLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/time_picker" android:background="@color/mdtp_circle_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="UNKNOWN_DATA_0x7f09002b" android:layout_height="UNKNOWN_DATA_0x7f09002d" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f09002d">
+        <TextView android:textSize="@dimen/mdtp_time_picker_header_text_size" android:textColor="@color/mdtp_white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/time_picker_header" android:background="@color/mdtp_accent_color_dark" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:textAllCaps="true" />
+        <FrameLayout android:id="@+id/time_display_background" android:background="@color/mdtp_accent_color" android:layout_width="UNKNOWN_DATA_0x7f090009" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+            <include android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f090019" layout="@layout/mdtp_time_header_label" />
+        </FrameLayout>
+        <include layout="@layout/mdtp_done_button" />
+    </LinearLayout>
+</LinearLayout>

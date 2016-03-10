@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/more_items_layout" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@color/yellow" android:id="@+id/more_items_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/more_items" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

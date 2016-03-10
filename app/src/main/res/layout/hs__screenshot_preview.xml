@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/screenshotPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/horizontal_divider" />
+    <View android:id="@+id/horizontal_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_above="@+id/button_containers" style="@style/HSDivider" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/button_containers" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/hs__helpshiftActivityFooter" android:splitMotionEvents="false">
+        <Button android:id="@+id/change" android:background="?attr/hs__selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hs__change_btn" android:layout_weight="0.5" />
+        <View android:layout_width="UNKNOWN_DATA_0x101" android:layout_height="match_parent" style="@style/HSDivider" />
+        <Button android:id="@+id/send" android:background="?attr/hs__selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hs__send_msg_btn" android:layout_weight="0.5" />
+    </LinearLayout>
+    <ImageView android:id="@+id/hs__helpshiftActivityFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</merge>

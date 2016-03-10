@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100226" android:versionName="1.0.226" package="com.mobcrush.mobcrush" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.mobcrush.mobcrush.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.mobcrush.mobcrush.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.mobcrush.mobcrush.MainApplication" android:allowBackup="true" android:logo="@drawable/ic_mc_logo" android:largeHeap="true">
+        <receiver android:name="com.mobcrush.mobcrush.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.mobcrush.mobcrush" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobcrush.mobcrush.GcmIntentService" />
+        <activity android:theme="@style/AppTheme_Splash" android:label="@string/app_name" android:name="com.mobcrush.mobcrush.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mobcrush" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:label="@string/title_activity_login" android:name="com.mobcrush.mobcrush.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateAlwaysHidden|stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme" android:label="@string/forgot_password" android:name="com.mobcrush.mobcrush.ForgotPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateAlwaysHidden|stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_Translucent" android:label="@string/title_activity_game_details" android:name="com.mobcrush.mobcrush.GameDetailsActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize|adjustPan|adjustNothing" />
+        <activity android:label="@string/title_activity_profile" android:name="com.mobcrush.mobcrush.ProfileActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_profile_about" android:name="com.mobcrush.mobcrush.ProfileAboutActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:label="@string/title_activity_liked_videos" android:name="com.mobcrush.mobcrush.LikedVideosActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_game" android:name="com.mobcrush.mobcrush.GameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_Settings" android:label="@string/title_activity_settings" android:name="com.mobcrush.mobcrush.SettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_Settings" android:label="@string/title_activity_settings_general_notifications" android:name="com.mobcrush.mobcrush.SettingsNotificationsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_Settings" android:label="@string/title_activity_following_setting" android:name="com.mobcrush.mobcrush.SettingsFollowingNotificationsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:theme="@style/Helpshift_Theme_Mobcrush" android:label="@string/hs__conversation_header" android:name="com.helpshift.HSConversation" android:configChanges="locale|orientation|screenSize|layoutDirection" />
+        <activity android:theme="@style/Helpshift_Theme_Mobcrush" android:name="com.helpshift.HSQuestionsList" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Helpshift_Theme_Mobcrush" android:label="@string/hs__question_header" android:name="com.helpshift.HSQuestion" android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" />
+        <activity android:theme="@style/Helpshift_Theme_Mobcrush" android:name="com.helpshift.HSSection" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|adjustNothing" android:hardwareAccelerated="true" />
+        <activity android:theme="@style/Helpshift_Theme_Mobcrush" android:label="@string/hs__help_header" android:name="com.helpshift.HSFaqs" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|adjustNothing" android:hardwareAccelerated="true" />
+        <activity android:theme="@style/Helpshift_Theme_Dialog" android:name="com.helpshift.HSReview" android:configChanges="orientation|screenSize" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="867f25a7308c5171192f2133c1232e39b158a50d" />
+        <meta-data android:name="com.mixpanel.android.MPConfig.ResourcePackageName" android:value="com.mobcrush.mobcrush" />
+        <meta-data android:name="com.mixpanel.android.MPConfig.AutoShowMixpanelUpdates" android:value="false" />
+        <activity android:theme="@style/AppTheme_Transparent" android:label="@string/title_activity_chat" android:name="com.mobcrush.mobcrush.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+        <activity android:label="@string/share_broadcast" android:name="com.mobcrush.mobcrush.ShareToActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name="com.mobcrush.mobcrush.SelectUsersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:label="@string/search" android:name="com.mobcrush.mobcrush.SearchUsersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:label="@string/title_activity_in_app_browser" android:name="com.mobcrush.mobcrush.InAppBrowser" />
+        <activity android:theme="@style/AppTheme_Transparent" android:name="com.mobcrush.mobcrush.helper.SocialConnectHelperActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:label="@string/title_activity_featured_broadcasters_activtiy" android:name="com.mobcrush.mobcrush.FeaturedBroadcastersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name="com.mixpanel.android.surveys.SurveyActivity" />
+        <activity android:label="@string/title_channel_moderation" android:name="com.mobcrush.mobcrush.ChannelModerationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:label="@string/title_activity_about" android:name="com.mobcrush.mobcrush.AboutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/AppTheme_Transparent" android:name="com.mobcrush.mobcrush.EmailVerificationRequestActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <service android:name="com.mobcrush.mobcrush.broadcast.BroadcastService" android:exported="false" />
+        <activity android:theme="@style/AppTheme_Transparent" android:label="@string/title_activity_broadcast" android:name="com.mobcrush.mobcrush.broadcast.BroadcastActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/Helpshift_Theme_Activity" android:name="com.helpshift.ScreenshotPreviewActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Helpshift_Theme_Activity" android:name="com.helpshift.SearchResultActivity" android:configChanges="orientation|screenSize" />
+        <service android:label="Helpshift Service" android:name="com.helpshift.HSService" />
+        <service android:label="Helpshift Service" android:name="com.helpshift.HSRetryService" />
+    </application>
+</manifest>

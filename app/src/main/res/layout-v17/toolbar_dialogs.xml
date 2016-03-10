@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res-auto" app:theme="@style/AppTheme_DialogToolbar" app:id="@+id/toolbar" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize" app:popupTheme="@style/AppTheme_DialogToolbar">
+    <RelativeLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerVertical="true">
+        <TextView app:textAppearance="?unknown_attr_ref: 1010040" app:textColor="@color/dark" app:ellipsize="end" app:id="@+id/title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" style="@style/MCToolbar_Title" />
+        <TextView app:textSize="14sp" app:textStyle="bold" app:textColor="@color/menu_item_text" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:id="@+id/action" app:background="@drawable/bg_follow_on_toolbar" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f0900bb" app:layout_marginLeft="16dp" app:layout_marginRight="24dp" app:layout_alignBaseline="@+id/title" app:layout_alignParentRight="true" app:layout_marginEnd="24dp" app:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

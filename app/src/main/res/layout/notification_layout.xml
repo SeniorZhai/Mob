@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#ff424242" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x8001">
+    <ImageView android:id="@+id/profile_image" android:layout_width="UNKNOWN_DATA_0x8001" android:layout_height="UNKNOWN_DATA_0x8001" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="0x106000b" android:id="@+id/broadcaster_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="18dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp">
+            <TextView android:textSize="14sp" android:textColor="#80ffffff" android:id="@+id/broadcast_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/broadcasting_timer" />
+            <Chronometer android:textSize="14sp" android:textColor="#80ffffff" android:id="@+id/broadcast_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginTop="18dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/expand" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1.0" style="@*style/Widget.Material.Button.Borderless.Small" />
+            <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/stop" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingRight="13dp" android:paddingBottom="14dp" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1.0" style="@*style/Widget.Material.Button.Borderless.Small" />
+            <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/quit" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1.0" style="@*style/Widget.Material.Button.Borderless.Small" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

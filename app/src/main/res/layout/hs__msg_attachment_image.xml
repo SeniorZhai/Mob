@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="0x102000b" android:paddingLeft="@dimen/hs__listPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__listPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingTop" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.8"
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/user_message" android:background="?attr/hs__chatBubbleAdminBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="0x1020010" android:paddingLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ProgressBar android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x102000d" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?unknown_attr_ref: 101007a" />
+                    <ImageButton android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020019" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hs__action_download" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.2" />
+    </LinearLayout>
+</LinearLayout>

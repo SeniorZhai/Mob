@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:id="@+id/action_liked_video" app:visible="false" app:title="@string/action_videos_you_ve_liked" app:showAsAction="always" />
+    <item app:id="@+id/action_edit_profile_photo" app:visible="false" app:title="@string/action_edit_profile_photo" app:showAsAction="always" />
+    <item app:id="@+id/action_edit_profile_info" app:visible="false" app:title="@string/action_edit_profile_info" app:showAsAction="always" />
+    <item app:id="@+id/action_settings" app:visible="false" app:title="@string/action_settings" app:showAsAction="always" />
+    <item app:id="@+id/action_send_feedback" app:visible="false" app:title="@string/action_send_feedback" app:showAsAction="always" />
+    <item app:id="@+id/action_help" app:title="@string/action_help" app:showAsAction="always" />
+    <item app:id="@+id/action_about" app:visible="false" app:title="@string/action_about" app:showAsAction="always" />
+    <item app:id="@+id/action_logout" app:title="@string/action_logout" app:showAsAction="always" />
+</menu>

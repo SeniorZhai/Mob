@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020014" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.2" />
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.8"
+            <LinearLayout android:id="@+id/user_message" android:background="?attr/hs__chatBubbleUserBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x102000d" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingTop" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?unknown_attr_ref: 1010077" />
+                <ImageView android:id="0x1020010" android:paddingLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

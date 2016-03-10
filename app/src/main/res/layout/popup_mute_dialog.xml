@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@color/dark" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/title" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mute_user" style="@*style/TextAppearance.DialogWindowTitle" />
+        <TextView android:id="@+id/text" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@+id/mute_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/MuteFor10Minutes" style="@style/MCButton" />
+        <Button android:id="@+id/mute_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/MuteFor1Day" style="@style/MCButton" />
+        <Button android:id="@+id/mute_indefinitely" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/MuteIndefinitely" style="@style/MCButton" />
+    </LinearLayout>
+</FrameLayout>

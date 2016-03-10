@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:icon="@drawable/ic_facebook" android:persistent="false" android:enabled="true" android:title="@string/pref_title_facebook" android:key="@string/pref_key_facebook" android:defaultValue="false" />
+    <SwitchPreference android:icon="@drawable/ic_twitter" android:persistent="false" android:enabled="true" android:title="@string/pref_title_twitter" android:key="@string/pref_key_twitter" android:defaultValue="false" />
+</PreferenceScreen>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/hs__searchResultActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="0x102000a" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?attr/hs__contentSeparatorColor" android:dividerHeight="1dp" android:layout_above="@+id/hs__helpshiftActivityFooter" android:layout_alignParentTop="true" />
+    <ImageView android:id="@+id/hs__helpshiftActivityFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

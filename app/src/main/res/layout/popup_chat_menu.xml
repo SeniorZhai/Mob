@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@color/dark" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/action_appoint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_appoint_as_moderator" style="@style/MCButton" />
+        <Button android:id="@+id/action_ignore" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_ignore" style="@style/MCButton" />
+        <Button android:id="@+id/action_mute" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_mute" style="@style/MCButton" />
+        <Button android:id="@+id/action_ban" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_ban" style="@style/MCButton" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x1020000" android:drawable="@drawable/apptheme_progress_bg_holo_light" />
+    <item android:id="0x102000f">
+        <scale android:drawable="@drawable/apptheme_progress_secondary_holo_light" android:scaleWidth="100%" />
+    </item>
+    <item android:id="0x102000d">
+        <scale android:drawable="@drawable/apptheme_progress_primary_holo_light" android:scaleWidth="100%" />
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="hs__actionbar_indeterminate_progress">res/menu/hs__actionbar_indeterminate_progress.xml</menu>
+    <menu name="hs__add_conversation_menu">res/menu/hs__add_conversation_menu.xml</menu>
+    <menu name="hs__faqs_fragment">res/menu/hs__faqs_fragment.xml</menu>
+    <menu name="hs__messages_menu">res/menu/hs__messages_menu.xml</menu>
+    <menu name="hs__search_on_conversation">res/menu/hs__search_on_conversation.xml</menu>
+    <menu name="hs__show_conversation">res/menu/hs__show_conversation.xml</menu>
+    <menu name="menu_about">res/menu/menu_about.xml</menu>
+    <menu name="menu_broadcast_more">res/menu/menu_broadcast_more.xml</menu>
+    <menu name="menu_chat">res/menu/menu_chat.xml</menu>
+    <menu name="menu_chat_banned">res/menu/menu_chat_banned.xml</menu>
+    <menu name="menu_chat_for_unverified">res/menu/menu_chat_for_unverified.xml</menu>
+    <menu name="menu_chat_ignored">res/menu/menu_chat_ignored.xml</menu>
+    <menu name="menu_chat_mods">res/menu/menu_chat_mods.xml</menu>
+    <menu name="menu_chat_muted">res/menu/menu_chat_muted.xml</menu>
+    <menu name="menu_chat_with_appoint">res/menu/menu_chat_with_appoint.xml</menu>
+    <menu name="menu_main">res/menu/menu_main.xml</menu>
+    <menu name="menu_profile">res/menu/menu_profile.xml</menu>
+    <menu name="menu_profile_more">res/menu/menu_profile_more.xml</menu>
+    <menu name="menu_profile_more_for_unverified">res/menu/menu_profile_more_for_unverified.xml</menu>
+    <menu name="menu_profile_owner">res/menu/menu_profile_owner.xml</menu>
+</resources>

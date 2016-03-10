@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content" android:background="@color/dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_with_button" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/toolbar">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#ffcccccc" android:id="@+id/text" android:background="0x106000d" android:padding="@dimen/about_margin" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <EditText android:textSize="14sp" android:textColor="@color/dark" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/edit" android:background="0x106000d" android:padding="@dimen/about_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+            <include layout="@layout/layout_loading" />
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

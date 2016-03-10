@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.afollestad.materialdialogs.internal.MDRootLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:md_reduce_padding_no_title_no_buttons="false">
+    <include layout="@layout/md_stub_titleframe" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/md_dialog_frame_margin" android:paddingTop="@dimen/md_content_padding_top" android:paddingRight="@dimen/md_dialog_frame_margin" android:paddingBottom="@dimen/md_content_padding_bottom" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/md_content_textsize" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="@dimen/md_content_padding_bottom" android:fontFamily="sans-serif" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/md_content_textsize" android:id="0x1020009" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginRight="-2dp" android:layout_marginBottom="1dp" />
+            <TextView android:textSize="12sp" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/minMax" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48dp" android:layout_below="0x1020009" android:layout_alignRight="0x1020009" android:fontFamily="sans-serif" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/md_stub_actionbuttons" />
+</com.afollestad.materialdialogs.internal.MDRootLayout>

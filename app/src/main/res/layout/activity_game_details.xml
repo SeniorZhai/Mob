@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobcrush.mobcrush.ui.TweakedInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_parent_view" android:background="@color/dark" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/view_holder" android:background="#ee161616" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" />
+        <include layout="@layout/toolbar_with_likes" />
+    </LinearLayout>
+    <include android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/popup_notification_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4401" layout="@layout/layout_popup_banner" />
+</com.mobcrush.mobcrush.ui.TweakedInsetsFrameLayout>

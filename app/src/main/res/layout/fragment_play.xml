@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/layout_header" android:background="@drawable/bg_play_poster" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xa001">
+        <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/tap_on_a_game_below_to_start_streaming" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="24sp" android:textColor="#ffffec05" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/stream_your_gameplay" android:layout_above="@+id/description" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:src="@drawable/ic_play_gamepad" android:layout_above="@+id/title" android:layout_centerHorizontal="true" android:contentDescription="@responseparser/ResponseActionDiscard" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/games_background" android:paddingBottom="@dimen/card_divider_height" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout_header" />
+</RelativeLayout>

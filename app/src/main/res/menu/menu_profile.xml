@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_follow_plus_white" app:id="@+id/action_follow" app:visible="false" app:orderInCategory="0" app:title="@string/follow" app:showAsAction="ifRoom" />
+    <item app:id="@+id/action_settings" app:visible="false" app:orderInCategory="100" app:title="@string/action_settings" app:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

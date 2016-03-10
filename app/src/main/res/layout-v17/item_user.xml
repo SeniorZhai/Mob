@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f09012a" app:rv_alpha="30" app:rv_rippleDuration="0x10e0000" app:rv_color="@color/dark">
+    <RelativeLayout app:orientation="vertical" app:id="@+id/item_layout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f09012a">
+        <ImageView app:id="@+id/icon" app:padding="16dp" app:layout_width="UNKNOWN_DATA_0x7f090129" app:layout_height="UNKNOWN_DATA_0x7f090129" app:layout_centerVertical="true" app:contentDescription="@responseparser/ResponseActionDiscard" />
+        <TextView app:textSize="16sp" app:textColor="@color/user_text_color" app:id="@+id/user_name_text" app:paddingTop="0dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toRightOf="@+id/icon" app:layout_centerVertical="true" app:layout_toEndOf="@+id/icon" />
+        <TextView app:textSize="14sp" app:textColor="#ffbbbbbb" app:id="@+id/description_text" app:paddingTop="1dp" app:paddingBottom="16dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_toRightOf="@+id/icon" app:layout_below="@+id/user_name_text" app:layout_toEndOf="@+id/icon" />
+        <FrameLayout app:id="@+id/follow_layout" app:layout_width="UNKNOWN_DATA_0x7f0900bd" app:layout_height="match_parent" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_alignParentRight="true" app:layout_marginEnd="16dp" app:layout_alignParentEnd="true">
+            <TextView app:textSize="@dimen/follow_text_size" app:textColor="@color/light" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:id="@+id/follow_text" app:background="@drawable/bg_follow" app:layout_width="UNKNOWN_DATA_0x7f0900bd" app:layout_height="UNKNOWN_DATA_0x7f0900bb" app:text="@string/FOLLOW" />
+        </FrameLayout>
+        <ProgressBar app:id="@+id/progress" app:background="0x106000b" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0900bd" app:layout_height="UNKNOWN_DATA_0x7f0900bb" app:indeterminate="true" app:layout_alignLeft="@+id/follow_layout" app:layout_centerVertical="true" app:layout_alignStart="@+id/follow_layout" style="?unknown_attr_ref: 1010288" />
+        <View app:background="@drawable/user_list_divider" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0900e3" app:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.andexert.library.RippleView>

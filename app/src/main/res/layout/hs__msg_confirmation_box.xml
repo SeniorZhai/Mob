@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/hs__listPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.8"
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/admin_message" android:background="?attr/hs__chatBubbleAdminBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?attr/hs__messagesTextColor" android:autoLink="web|email|phone|map|all" android:id="0x1020014" android:paddingLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x102000d" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingTop" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?unknown_attr_ref: 1010077" />
+            <LinearLayout android:orientation="vertical" android:id="0x1020018" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="0x102002b" android:background="0x1060000" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:alpha="0.5" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="0x102001a" android:background="?attr/hs__selectableItemBackground" android:paddingTop="@dimen/hs__msgActionButtonPadding" android:paddingBottom="@dimen/hs__msgActionButtonPadding" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:src="@drawable/hs__action_no" android:text="@string/hs__unsolved_btn" android:layout_weight="1.0" />
+                    <View android:background="0x1060000" android:layout_width="UNKNOWN_DATA_0x101" android:layout_height="match_parent" android:alpha="0.5" />
+                    <ImageButton android:id="0x1020019" android:background="?attr/hs__selectableItemBackground" android:paddingTop="@dimen/hs__msgActionButtonPadding" android:paddingBottom="@dimen/hs__msgActionButtonPadding" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:src="@drawable/hs__action_yes" android:text="@string/hs__solved_btn" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.2" />
+</LinearLayout>

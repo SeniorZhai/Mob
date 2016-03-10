@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_title_consolidate_notifications" android:key="@string/pref_key_group_notifications" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_title_new_follower_notifications" android:key="@string/pref_key_notifications_follower" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_title_new_like_notifications" android:key="@string/pref_key_notifications_like" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_title_new_shares_notifications" android:key="@string/pref_key_notifications_shares" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_title_new_broadcast_notifications" android:key="@string/pref_key_notifications_broadcasts" android:defaultValue="true" />
+</PreferenceScreen>

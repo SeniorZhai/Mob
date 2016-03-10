@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/configure_broadcast" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36dp">
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/hide_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_arrow_back_white_24dp" />
+        <TextView android:id="@+id/broadcast_setup_heading" android:text="@string/broadcast_settings" style="@style/BroadcastSetupHeading" />
+    </LinearLayout>
+    <TextView android:text="@string/game_selection" style="@style/BroadcastSetupText" />
+    <AutoCompleteTextView android:id="@+id/game_selection" android:hint="@string/game_selection_hint" style="@style/BroadcastEditText" />
+    <TextView android:layout_marginTop="32dp" android:text="@string/broadcast_title_selection" style="@style/BroadcastSetupText" />
+    <EditText android:id="@+id/broadcast_title_selection" android:hint="@string/broadcast_title_selection_hint" android:maxLength="70" style="@style/BroadcastEditText" />
+    <TextView android:textSize="12sp" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/character_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="48dp" />
+    <Button android:id="@+id/broadcast_setup_button" android:text="@string/start_your_broadcast" style="@style/BroadcastStartButton" />
+</LinearLayout>

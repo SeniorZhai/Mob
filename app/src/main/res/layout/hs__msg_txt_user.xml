@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.2" />
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.8"
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/user_message" android:background="?attr/hs__chatBubbleUserBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="@color/hs__user_messages_text_color" android:autoLink="web|email|phone|map|all" android:id="0x1020014" android:paddingLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="0x1020006" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hs__warning" />
+            <TextView android:textSize="@dimen/hs__textSizeSmall" android:id="0x1020015" android:paddingTop="3dp" android:paddingRight="@dimen/hs__msg_timestamp_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="@dimen/hs__msg_timestamp_alpha" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

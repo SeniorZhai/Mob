@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/hs__csatDialogBackgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RatingBar android:id="@+id/ratingBar" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:stepSize="1.0" android:layout_centerHorizontal="true" />
+    <TextView android:id="@+id/like_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ratingBar" android:layout_centerHorizontal="true" />
+    <EditText android:id="@+id/additional_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp" android:hint="@string/hs__csat_additonal_feedback_message" android:maxLines="4" android:minLines="2" android:layout_below="@+id/like_status" />
+    <View android:id="@+id/divider" android:layout_below="@+id/additional_feedback" style="@style/HSDivider" />
+    <Button android:id="@+id/submit" android:background="?attr/hs__selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hs__submit_conversation_btn" android:height="@dimen/hs__actionbar_compat_height" android:layout_below="@+id/divider" android:layout_centerHorizontal="true" />
+</RelativeLayout>

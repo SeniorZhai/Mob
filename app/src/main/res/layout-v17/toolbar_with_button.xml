@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res-auto" app:theme="@style/AppTheme_Toolbar" app:id="@+id/toolbar" app:background="0x106000d" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize" app:popupTheme="@style/AppTheme_Toolbar">
+    <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content"
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerVertical="true">
+            <TextView app:textColor="@color/yellow" app:ellipsize="end" app:id="@+id/title" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="2" app:layout_toLeftOf="@+id/button_title" app:layout_alignParentLeft="true" app:layout_centerVertical="true" app:layout_toStartOf="@+id/button_title" app:layout_alignParentStart="true" style="@style/MCToolbar_Title" />
+            <TextView app:textSize="14sp" app:textColor="#999999" app:id="@+id/button_title" app:paddingLeft="24dp" app:paddingRight="24dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignBaseline="@+id/title" app:layout_alignParentRight="true" app:paddingEnd="24dp" app:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View app:id="@+id/button" app:layout_width="UNKNOWN_DATA_0x6401" app:layout_height="UNKNOWN_DATA_0x7f010107" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

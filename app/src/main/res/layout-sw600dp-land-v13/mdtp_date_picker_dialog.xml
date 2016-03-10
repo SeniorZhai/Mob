@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/mdtp_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f09001f"
+        <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <include layout="@layout/mdtp_date_picker_header_view" />
+            <include layout="@layout/mdtp_date_picker_selected_date" />
+        </LinearLayout>
+        <include layout="@layout/mdtp_date_picker_view_animator" />
+    </LinearLayout>
+    <include layout="@layout/mdtp_done_button" />
+</LinearLayout>

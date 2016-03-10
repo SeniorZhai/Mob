@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobcrush.mobcrush.ui.TweakedInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="0x106000d"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_with_likes" />
+
+        <include layout="@layout/layout_chat" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/popup_notification_layout"
+        layout="@layout/layout_popup_banner"
+        android:visibility="gone" />
+</com.mobcrush.mobcrush.ui.TweakedInsetsFrameLayout>

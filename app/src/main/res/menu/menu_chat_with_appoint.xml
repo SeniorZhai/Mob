@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_chat_view_profile" android:id="@+id/action_view_profile" android:title="@string/action_view_profile" />
+    <item android:icon="@drawable/ic_add_mod" android:id="@+id/action_appoint" android:visible="true" android:title="@string/action_appoint_as_moderator" />
+    <item android:icon="@drawable/ic_chat_ignore" android:id="@+id/action_ignore" android:title="@string/action_ignore" />
+    <item android:icon="@drawable/ic_chat_mute" android:id="@+id/action_mute" android:title="@string/action_mute" />
+    <item android:icon="@drawable/ic_ban" android:id="@+id/action_ban" android:title="@string/action_ban" />
+</menu>

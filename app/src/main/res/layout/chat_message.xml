@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x7f090079">
+    <ImageView android:id="@+id/message_icon" android:padding="7dp" android:layout_width="UNKNOWN_DATA_0x7f090079" android:layout_height="UNKNOWN_DATA_0x7f090079" android:scaleType="fitCenter" android:contentDescription="@responseparser/ResponseActionDiscard" />
+    <TextView android:textSize="10sp" android:textColor="@color/yellow" android:id="@+id/user_name_text" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/message_icon" />
+    <TextView android:textSize="14sp" android:textColor="@color/light" android:id="@+id/message_text" android:paddingTop="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/message_icon" android:layout_below="@+id/user_name_text" />
+</RelativeLayout>

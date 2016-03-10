@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/dark" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar" />
+        <FrameLayout android:id="@+id/tabs_layout" android:background="#ff151515" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+                <TextView android:textSize="@dimen/channel_tabs_title_size" android:textColor="@color/tab_item_title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_view_viewers" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/tab_viewers" android:layout_weight="1.0" android:textAllCaps="true" />
+                <TextView android:textSize="@dimen/channel_tabs_title_size" android:textColor="@color/tab_item_title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_view_mods" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/tab_mods" android:layout_weight="1.0" android:textAllCaps="true" />
+                <TextView android:textSize="@dimen/channel_tabs_title_size" android:textColor="@color/tab_item_title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_view_muted" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/tab_muted" android:layout_weight="1.0" android:textAllCaps="true" />
+                <TextView android:textSize="@dimen/channel_tabs_title_size" android:textColor="@color/tab_item_title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_view_ignored" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/tab_ignored" android:layout_weight="1.0" android:textAllCaps="true" />
+                <TextView android:textSize="@dimen/channel_tabs_title_size" android:textColor="@color/tab_item_title" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_view_banned" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/tab_banned" android:layout_weight="1.0" android:textAllCaps="true" />
+            </LinearLayout>
+            <com.mobcrush.mobcrush.ui.SlidingTabLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/sliding_tabs" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f090127" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/dark" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tabs_layout">
+            <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="0x1020004" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/EmptyText" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/popup_notification_layout" android:visibility="gone" layout="@layout/layout_popup_banner" />
+</FrameLayout>

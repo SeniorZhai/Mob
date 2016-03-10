@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/recycler_view" app:background="@color/dark" app:paddingTop="@dimen/card_divider_height" app:scrollbars="UNKNOWN_DATA_0x0" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <android.support.design.widget.FloatingActionButton app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/add_mod" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="24dp" app:src="@drawable/ic_follow_plus_white" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" app:layout_alignParentEnd="true" app:elevation="6dp" app:rippleColor="@color/ripple_color" app:pressedTranslationZ="12dp" app:backgroundTint="@color/blue" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="0x106000b" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/hs__sections_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/hs__helpshiftActivityFooter">
+        <android.support.v4.view.PagerTabStrip android:id="@+id/hs__pager_tab_strip" style="?attr/hs__faqsPagerTabStripStyle" />
+    </android.support.v4.view.ViewPager>
+    <ImageView android:id="@+id/hs__helpshiftActivityFooter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+package com.mixpanel.android.java_websocket.handshake;
+
+public interface ServerHandshakeBuilder extends HandshakeBuilder, ServerHandshake {
+    void setHttpStatus(short s);
+
+    void setHttpStatusMessage(String str);
+}

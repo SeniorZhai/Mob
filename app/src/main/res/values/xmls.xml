@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="app_tracker">res/xml/app_tracker.xml</xml>
+    <xml name="pref_broadcast_over_wifi">res/xml/pref_broadcast_over_wifi.xml</xml>
+    <xml name="pref_general">res/xml/pref_general.xml</xml>
+    <xml name="pref_general_notification">res/xml/pref_general_notification.xml</xml>
+    <xml name="pref_headers">res/xml/pref_headers.xml</xml>
+    <xml name="pref_notification">res/xml/pref_notification.xml</xml>
+    <xml name="pref_notification_sound">res/xml/pref_notification_sound.xml</xml>
+    <xml name="pref_social_networks">res/xml/pref_social_networks.xml</xml>
+</resources>

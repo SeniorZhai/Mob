@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignWithParentIfMissing="true">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@drawable/bg_dark" android:paddingLeft="0dp" android:paddingTop="@dimen/card_divider_height" android:paddingRight="0dp" android:paddingBottom="@dimen/card_divider_height" android:scrollbars="UNKNOWN_DATA_0x0" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:id="@+id/loading_layout" layout="@layout/layout_loading" />
+</RelativeLayout>
